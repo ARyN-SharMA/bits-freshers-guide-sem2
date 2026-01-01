@@ -47,9 +47,9 @@ export default function ContactPage() {
         {/* Contributors Grid */}
         <section className="py-12">
           <div className="container px-4">
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-5xl mx-auto">
               <h2 className="text-2xl font-bold text-center mb-8 animate-slide-up">Contributors</h2>
-              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div className="grid sm:grid-cols-2 gap-6">
                 {contributors.map((contributor, index) => (
                   <a key={contributor.email} href={`mailto:${contributor.email}`} className="block">
                     <Card
@@ -58,14 +58,14 @@ export default function ContactPage() {
                     >
                       <CardHeader className="pb-2">
                         <CardTitle className="text-base flex items-center gap-2">
-                          <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center text-sm font-bold text-primary">
+                          <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center text-sm font-bold text-primary shrink-0">
                             {contributor.name.charAt(0)}
                           </div>
                           {contributor.name}
                         </CardTitle>
                       </CardHeader>
                       <CardContent>
-                        <p className="text-xs text-muted-foreground font-mono break-all">{contributor.email}</p>
+                        <p className="text-sm text-muted-foreground font-mono truncate">{contributor.email}</p>
                       </CardContent>
                     </Card>
                   </a>
@@ -79,7 +79,7 @@ export default function ContactPage() {
         <section className="py-12 bg-muted/20">
           <div className="container px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-2xl font-bold text-center mb-8 animate-slide-up">How Can We Help?</h2>
+              <h2 className="text-2xl font-bold text-center mb-8 animate-slide-up">How Can You Help?</h2>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 <Card className="hover-lift card-entrance">
                   <CardHeader className="pb-2">
