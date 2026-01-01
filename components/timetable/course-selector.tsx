@@ -50,7 +50,7 @@ function getRatingCategory(rating: number, remarks: string): { label: string; pr
     return { label: "Unknown Rating", priority: 6 }
   if (remarks === "Avoid" || remarks === "Avoid (PUMA)") return { label: "Avoid", priority: 7 }
   if (
-    remarks === "Absolutely avoid" ||
+    remarks === "Absolutely Avoid" ||
     remarks === "Avoid at any cost" ||
     remarks === "Horrendous" ||
     remarks === "Strict"
