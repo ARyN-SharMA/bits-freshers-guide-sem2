@@ -14,7 +14,7 @@ export type Remark =
   | "Mediocre"
   | "Unknown"
   | "Avoid"
-  | "Absolutely avoid"
+  | "Absolutely Avoid"
   | "Avoid at any cost"
   | "New (1 credit)"
   | "Both same"
@@ -102,7 +102,7 @@ export function getRemarkColor(remark: Remark): string {
     case "Avoid":
     case "Avoid (PUMA)":
       return "text-orange-500"
-    case "Absolutely avoid":
+    case "Absolutely Avoid":
     case "Avoid at any cost":
     case "Horrendous":
     case "Strict":
@@ -142,7 +142,7 @@ export function getRemarkBg(remark: Remark): string {
     case "Avoid":
     case "Avoid (PUMA)":
       return "bg-orange-500/10 border-orange-500/30"
-    case "Absolutely avoid":
+    case "Absolutely Avoid":
     case "Avoid at any cost":
     case "Horrendous":
     case "Strict":
@@ -563,7 +563,7 @@ export const courses: Course[] = [
         room: "1232",
         days: "F",
         hours: "7",
-        rating: 0,
+        rating: 3,
         instructor: "Karunesh KR Gupta",
         remarks: "Avoid",
         type: "tutorial",
@@ -674,7 +674,7 @@ export const courses: Course[] = [
         room: "6103",
         days: "F",
         hours: "8",
-        rating: 0,
+        rating: 2,
         instructor: "Sandipan Dutta",
         remarks: "Avoid",
         type: "tutorial",
@@ -787,7 +787,7 @@ export const courses: Course[] = [
         days: "M",
         hours: "1-2",
         rating: 0,
-        instructor: "Swastik Sahoo (RS)",
+        instructor: "Amol Holkundkar",
         remarks: "Unknown",
         type: "lab",
       },
@@ -797,7 +797,7 @@ export const courses: Course[] = [
         days: "M",
         hours: "3-4",
         rating: 0,
-        instructor: "K C Sahu (RS)",
+        instructor: "Rajesh Chaoubisa",
         remarks: "Unknown",
         type: "lab",
       },
@@ -816,7 +816,7 @@ export const courses: Course[] = [
         room: "2247",
         days: "T",
         hours: "1-2",
-        rating: 0,
+        rating: 2,
         instructor: "Sandipan Dutta",
         remarks: "Avoid",
         type: "lab",
@@ -827,7 +827,7 @@ export const courses: Course[] = [
         days: "T",
         hours: "3-4",
         rating: 0,
-        instructor: "K C Sahu (RS)",
+        instructor: "Rajesh Chaoubisa",
         remarks: "Unknown",
         type: "lab",
       },
@@ -846,9 +846,9 @@ export const courses: Course[] = [
         room: "2247",
         days: "Th",
         hours: "1-2",
-        rating: 0,
-        instructor: "Swastik Sahoo (RS)",
-        remarks: "Unknown",
+        rating: 7,
+        instructor: "Bhavesh Chauhan",
+        remarks: "Decent",
         type: "lab",
       },
       {
@@ -858,7 +858,7 @@ export const courses: Course[] = [
         hours: "3-4",
         rating: 0,
         instructor: "Srijata Dey",
-        remarks: "Avoid",
+        remarks: "Absolutely Avoid",
         type: "lab",
       },
       {
@@ -866,9 +866,9 @@ export const courses: Course[] = [
         room: "2247",
         days: "Th",
         hours: "6-7",
-        rating: 8,
-        instructor: "Raj Kumar Gupta",
-        remarks: "Recommended",
+        rating: 7,
+        instructor: "Bhavesh Chauhan",
+        remarks: "Decent",
         type: "lab",
       },
       {
@@ -876,9 +876,9 @@ export const courses: Course[] = [
         room: "2247",
         days: "W",
         hours: "1-2",
-        rating: 6,
-        instructor: "Anshuman Dalvi",
-        remarks: "Decent",
+        rating: 9,
+        instructor: "Vaidya Rishikesh D",
+        remarks: "Recommended",
         type: "lab",
       },
       {
@@ -896,7 +896,7 @@ export const courses: Course[] = [
         room: "2247",
         days: "W",
         hours: "6-7",
-        rating: 9,
+        rating: 8,
         instructor: "Biswanath Layek",
         remarks: "Recommended",
         type: "lab",
@@ -2251,7 +2251,7 @@ export const courses: Course[] = [
         room: "6159",
         days: "Th",
         hours: "8",
-        rating: 0,
+        rating: 2,
         instructor: "Prashant Uday Manohar",
         remarks: "Avoid (PUMA)",
         type: "tutorial",
