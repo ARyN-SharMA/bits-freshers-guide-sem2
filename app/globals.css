@@ -377,3 +377,41 @@
 .glow-border:hover::before {
   opacity: 0.5;
 }
+/* 1. FORCE the browser to use Dark Mode defaults for scrollbars */
+html {
+  color-scheme: dark;
+}
+
+@layer utilities {
+  /* --- Sleek Dark Scrollbar --- */
+
+  /* Width of the scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: #000000; /* Force black background */
+  }
+
+  /* The "Track" (background behind the moving bar) */
+  ::-webkit-scrollbar-track {
+    background-color: #000000; /* Pure black */
+  }
+
+  /* The "Thumb" (the moving part) */
+  ::-webkit-scrollbar-thumb {
+    background-color: #333333; /* Dark Grey */
+    border-radius: 99px;
+    /* Adds a black border around the thumb to make it look slimmer/sleek */
+    border: 2px solid #000000; 
+  }
+
+  /* Hover State */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555555; /* Slightly lighter grey on hover */
+  }
+
+  /* The corner where horizontal and vertical bars meet */
+  ::-webkit-scrollbar-corner {
+    background-color: #000000;
+  }
+}
