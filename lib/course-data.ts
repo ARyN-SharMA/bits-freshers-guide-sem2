@@ -345,7 +345,7 @@ export const courses: Course[] = [
         hours: "3-4",
         rating: 9.5,
         instructor: "Paritosh Shukla",
-        remarks: "Hihgly Recommended",
+        remarks: "Highly Recommended",
         type: "lab",
       },
       {
@@ -373,9 +373,9 @@ export const courses: Course[] = [
         room: "3103",
         days: "T",
         hours: "1-2",
-        rating: 0,
+        rating: 6.5,
         instructor: "Mrinmoyee Basu",
-        remarks: "Unknown",
+        remarks: "Decent",
         type: "lab",
       },
       {
