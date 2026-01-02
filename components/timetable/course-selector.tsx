@@ -48,7 +48,8 @@ function getRatingCategory(rating: number, remarks: string): { label: string; pr
   if (remarks === "Decent" || remarks === "Mediocre") return { label: "Decent", priority: 5 }
   if (remarks === "Unknown" || remarks === "Both same" || remarks === "New (1 credit)" || remarks === "TBA")
     return { label: "Unknown Rating", priority: 6 }
-  if (remarks === "Avoid" || remarks === "Avoid (PUMA)") return { label: "Avoid", priority: 7 }
+  if (remarks === "Avoid" ) return { label: "Avoid", priority: 7 }
+  if (remarks === "Avoid (NIKE Better)") return {label: "Avoid (You know why)",priority:8}
   if (
     remarks === "Absolutely Avoid" ||
     remarks === "Avoid at any cost" ||
