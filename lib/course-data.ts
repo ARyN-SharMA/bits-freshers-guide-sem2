@@ -1641,7 +1641,7 @@ export const courses: Course[] = [
         hours: "8",
         rating: 8.5,
         instructor: "Rahul Kumar",
-        remarks: "Recommende",
+        remarks: "Recommended",
         type: "tutorial",
       },
       {
