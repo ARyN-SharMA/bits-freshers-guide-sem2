@@ -213,7 +213,7 @@ export const courses: Course[] = [
         hours: "1",
         rating: 8,
         instructor: "Satyajit Patra",
-        remarks: "Recommende",
+        remarks: "Recommended",
         type: "tutorial",
       },
       {
@@ -303,7 +303,7 @@ export const courses: Course[] = [
         hours: "9",
         rating: 9.5,
         instructor: "Paritosh Shukla",
-        remarks: " Highly Recommended",
+        remarks: "Highly Recommended",
         type: "tutorial",
       },
       {
