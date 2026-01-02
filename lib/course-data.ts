@@ -26,7 +26,7 @@ export type Remark =
   | "Better for lectures"
   | "Preferred"
   | "TBA"
-  | "Avoid (PUMA)"
+  | "Avoid (NIKE Better)"
 
 export interface Session {
   section: string
@@ -100,7 +100,7 @@ export function getRemarkColor(remark: Remark): string {
     case "Best":
       return "text-emerald-400"
     case "Avoid":
-    case "Avoid (PUMA)":
+    case "Avoid (NIKE Better)":
       return "text-orange-500"
     case "Absolutely Avoid":
     case "Avoid at any cost":
@@ -140,7 +140,7 @@ export function getRemarkBg(remark: Remark): string {
     case "Better for lectures":
       return "bg-emerald-500/10 border-emerald-500/30"
     case "Avoid":
-    case "Avoid (PUMA)":
+    case "Avoid (NIKE Better)":
       return "bg-orange-500/10 border-orange-500/30"
     case "Absolutely Avoid":
     case "Avoid at any cost":
@@ -363,9 +363,9 @@ export const courses: Course[] = [
         room: "3103",
         days: "S",
         hours: "1-2",
-        rating: 7,
+        rating:4,
         instructor: "Partha Sarathi Addy",
-        remarks: "Decent",
+        remarks: "Avoid",
         type: "lab",
       },
       {
@@ -393,9 +393,9 @@ export const courses: Course[] = [
         room: "3103",
         days: "T",
         hours: "6-7",
-        rating: 7,
+        rating: 4,
         instructor: "Partha Sarathi Addy",
-        remarks: "Decent",
+        remarks: "Avoid",
         type: "lab",
       },
       {
@@ -2063,7 +2063,7 @@ export const courses: Course[] = [
         hours: "1",
         rating: 3,
         instructor: "Prashant Uday Manohar",
-        remarks: "Avoid (PUMA)",
+        remarks: "Avoid (NIKE Better)",
         type: "tutorial",
       },
       {
@@ -2253,7 +2253,7 @@ export const courses: Course[] = [
         hours: "8",
         rating: 3,
         instructor: "Prashant Uday Manohar",
-        remarks: "Avoid (PUMA)",
+        remarks: "Avoid (NIKE Better)",
         type: "tutorial",
       },
       {
